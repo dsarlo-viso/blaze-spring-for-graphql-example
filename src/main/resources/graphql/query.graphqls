@@ -1,0 +1,15 @@
+scalar DateTime
+
+type UserView {
+    id: ID!
+    firstName: String
+    lastName: String
+    email: String
+    createdDate: DateTime
+    updatedDate: DateTime
+}
+
+type Query {
+    # Get all users
+    getAllUsers: [UserView]!
+}
